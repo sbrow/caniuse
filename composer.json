@@ -1,0 +1,46 @@
+{
+  "name": "sbrow/caniuse",
+  "description": ":package_description",
+  "license": "license",
+  "version": "0.1.0",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "author name",
+      "email": "author email",
+      "homepage": "author homepage"
+    }
+  ],
+  "homepage": "https://github.com/sbrow/caniuse",
+  "keywords": [
+    "Laravel",
+    "Caniuse"
+  ],
+  "require": {
+    "illuminate/support": "~7|~8"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.0",
+    "orchestra/testbench": "~5|~6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sbrow\\Caniuse\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sbrow\\Caniuse\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sbrow\\Caniuse\\CaniuseServiceProvider"
+      ],
+      "aliases": {
+        "Caniuse": "Sbrow\\Caniuse\\Facades\\Caniuse"
+      }
+    }
+  }
+}
